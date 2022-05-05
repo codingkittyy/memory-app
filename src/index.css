@@ -1,13 +1,44 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FEFFBE;
+  flex-direction: column !important;
+  display: flex !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.memoCard {
+  position: relative !important;
+}
+
+.memoCard img{
+  display: block !important;
+  border: 2px solid #fff !important;
+  border-radius: 6px !important;
+}
+
+.memoCard .front{
+  transform: rotateY(90deg) !important;
+  position: absolute !important;
+  transition: all ease-in 0.2s;
+}
+
+.flipped .front{
+  transform: rotateY(0deg) !important;
+  transition-delay: 0.2s;
+}
+
+.memoCard .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back{
+  transform: rotateY(90deg);
+  transition-delay: 0.2s;
 }
