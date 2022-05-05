@@ -11,7 +11,7 @@ export const cardSlice = createSlice({
                 matched: false,
             },
             {
-                img: '2.jpg',0
+                img: '2.jpg',
                 matched: false,
             },
             {
